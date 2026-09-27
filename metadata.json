@@ -1,0 +1,6 @@
+{
+  "name": "Forja P.A.P.A. — Creador de Objetos de Rol",
+  "description": "Herramienta sencilla y completa para diseñar y balancear objetos de rol con el Sistema P.A.P.A. (PF, propiedades, conjuros, requisitos y maldiciones).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

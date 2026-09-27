@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cinzel', serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-forja-canvas: #141416;
+  --color-forja-surface: #1E1E22;
+  --color-forja-surface-light: #28282E;
+  --color-forja-border: rgba(255, 255, 255, 0.08);
+  
+  --color-forja-pink: #E02B69;
+  --color-forja-pink-dark: #B91C50;
+  --color-forja-rose: #C26D74;
+  --color-forja-rose-light: #D4848B;
+  --color-forja-gold: #E5CB7D;
+  --color-forja-gold-light: #F0DD9E;
+  --color-forja-gold-dark: #C2A54F;
+  --color-forja-charcoal: #252528;
+  --color-forja-stone: #7D8085;
+  --color-forja-stone-light: #9EA1A7;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #141416;
+  color: #ECEBED;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #18181B;
+}
+::-webkit-scrollbar-thumb {
+  background: #323238;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C26D74;
+}
+
+@media print {
+  body {
+    background: #FFFFFF !important;
+    color: #111111 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
